@@ -29,12 +29,10 @@ require(['ibmmfpfanalytics', 'mfp'], function(wlanalytics, WL) {
 
     WL.Client.init(wlInitOptions).then (
         function() {
-            console.log ("in client init");
             document.getElementById("btn_submit").addEventListener('click', submitRequest);
     });
 
     function submitRequest() {
-        console.log ("in submitRequest");
         var first = document.getElementById("first").value;
         var middle = document.getElementById("middle").value;
         var last = document.getElementById("last").value;
@@ -58,8 +56,7 @@ require(['ibmmfpfanalytics', 'mfp'], function(wlanalytics, WL) {
 
         resourceRequest.sendFormParameters(formParameters).then(
             function(response) {
-                console.log ("in sendFormParameters success");
-                WL.Logger.info("Success: " + response.responseText);
+                WL.Logger.debug("Success: " + response.responseText);
                 // window.plugins.spinnerDialog.hide();
 
                 var resultText = "Success: " + "<br>";
@@ -72,12 +69,8 @@ require(['ibmmfpfanalytics', 'mfp'], function(wlanalytics, WL) {
                 document.getElementById("div_result").innerHTML= resultText;
             },
             function(response) {
-                console.log ("in sendFormParameters failure:" + JSON.stringify(response));
-                WL.Logger.info("Failure: " + JSON.stringify(response));
                 // window.plugins.spinnerDialog.hide();
-
                 var resultText = "Failure: " + JSON.stringify(response);
-
                 document.getElementById("div_result").innerHTML = resultText;
             }
         );
