@@ -1,20 +1,12 @@
 {
   "name": "resourcerequestweb",
   "version": "1.0.0",
-  "description": "IBM MobileFirst Platform Foundation === ## ResourceRequestWeb A sample application demonstrating the use to the WLResourceRequest API in JavaScript.",
-  "main": "proxy.js",
+  "description": "ResourceRequestWeb is a sample application demonstrating the use to the WLResourceRequest API in JavaScript.",
   "dependencies": {
-    "express": "^4.13.4",
+    "express": "latest",
     "ibm-mfp-web-sdk": "^8.0.2016051608",
-    "request": "^2.72.0",
-    "requirejs": "^2.2.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://www.github.com/MobileFirst-Platform-Developer-Center/ResourceRequestWeb.git"
+    "request": "latest",
+    "requirejs": "latest"
   },
   "author": "IBM MobileFirst Platform Foundation",
   "license": "SEE LICENSE IN README.MD"
