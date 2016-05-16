@@ -16,8 +16,8 @@
 
 require.config({
 	'paths': {
-		'ibmmfpfanalytics': 'node_modules/ibm-mfp-web-core-sdk/lib/analytics/ibmmfpfanalytics',
-		'mfp': 'node_modules/ibm-mfp-web-core-sdk/ibmmfpf'
+		'ibmmfpfanalytics': 'node_modules/ibm-mfp-web-sdk/lib/analytics/ibmmfpfanalytics',
+		'mfp': 'node_modules/ibm-mfp-web-sdk/ibmmfpf'
 	}
 });
 
