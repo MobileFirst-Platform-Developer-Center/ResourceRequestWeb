@@ -7,13 +7,18 @@ A sample application demonstrating the use to the WLResourceRequest API in JavaS
 https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-mfpf-sdk/resource-request/javascript
 
 ### Usage
-1. Make sure you have set-up your [Web development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/web-development-environment).
-2. Use either Maven or MobileFirst Developer CLI to build and deploy the `JavaAdapter` adapter.
+1. Use either Maven or MobileFirst Developer CLI to build and deploy the `JavaAdapter` adapter.
 
   The `JavaAdapter` adapter can be found in https://github.com/MobileFirst-Platform-Developer-Center/Adapters/tree/release80.
 
-3. Add the application to your local setup.
-4. Load the application URL in a browser.
+2. You can either set-up a [Web development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/web-development-environment) that fits your needs, or use the provided Node.js-based reverse proxy.
+
+#### WebSphere Liberty or Node.js
+Follow the [Setting up the Web development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/web-development-environment)
+
+#### Built-in 
+1. Make sure you have Node.js installed.
+2. Navigate to the sample's root folder and run the command: `npm install` followed by: `npm start`.
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
