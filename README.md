@@ -16,9 +16,10 @@ https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/using-the-m
 #### WebSphere Liberty or Node.js
 Follow the [Setting up the Web development environment](https://mobilefirstplatform.ibmcloud.com/tutorials/en/foundation/8.0/setting-up-your-development-environment/web-development-environment)
 
-#### Built-in 
+#### Using the provided Node.js-based reverse proxy
 1. Make sure you have Node.js installed.
 2. Navigate to the sample's root folder and run the command: `npm install` followed by: `npm start`.
+3. In a browser, load the URL [http://localhost:9081/sampleapp](http://localhost:9081/sampleapp).
 
 ### Supported Levels
 IBM MobileFirst Platform Foundation 8.0
