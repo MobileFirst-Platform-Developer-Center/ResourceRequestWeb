@@ -23,7 +23,7 @@ require.config({
 
 require(['ibmmfpfanalytics', 'mfp'], function(wlanalytics, WL) {
     var wlInitOptions = {
-        mfpContextRoot : '/mfp', // "mfp" is the default context root in the MobileFirst Development Kit
+        mfpContextRoot : '/mfp', // "mfp" is the default context root in the MobileFirst Developer Kit
         applicationId : 'com.sample.resourcerequestweb'
     };
 
