@@ -20,10 +20,11 @@ var request = require('request');
 
 var app = express();
 var server = http.createServer(app);
+var mfpServer = "http://localhost:9080";
 var port = 9081;
 
 server.listen(port);
-app.use('/myapp', express.static(__dirname + '/'));
+app.use('/sampleapp', express.static(__dirname + '/'));
 console.log('::: server.js ::: Listening on port ' + port);
 
 // Web server - serves the web application
@@ -34,7 +35,7 @@ app.get('/home', function(req, res) {
 
 // Reverse proxy, pipes the requests to/from MobileFirst Server
 app.use('/mfp/*', function(req, res) {
-    var url = 'http://localhost:9080' + req.originalUrl;
+    var url = mfpServer + req.originalUrl;
     console.log('::: server.js ::: Passing request to URL: ' + url);
     req.pipe(request[req.method.toLowerCase()](url)).pipe(res);
 });
