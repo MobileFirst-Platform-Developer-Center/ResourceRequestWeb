@@ -59,7 +59,7 @@ require(['ibmmfpfanalytics', 'mfp'], function(wlanalytics, WL) {
                 WL.Logger.debug("Success: " + response.responseText);
                 // window.plugins.spinnerDialog.hide();
 
-                var resultText = "Success: " + "<br>";
+                var resultText = "<br><b>Success:</b><br>";
                 resultText += "Name: ";
                 resultText += response.responseJSON.first + " " + response.responseJSON.middle + " " + response.responseJSON.last + "<br>";
                 resultText += "Age: " + response.responseJSON.age + "<br>";
